@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<head>
+  	<meta charset="utf-8">
+  	<meta http-equiv="x-ua-compatible" content="ie=edge">
+  	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  	<title>书阅(北京)数字科技有限公司</title>
+    <meta name="keywords" content="书阅(北京)数字科技有限公司,LazyJoy">
+    <meta name="description" content="书阅(北京)数字科技有限公司,LazyJoy">
+  	<link rel="icon" href="img/logo.png" sizes="32x32">
+  	<link rel="stylesheet" href="css/index.css"> 
+
+
+    <style>
+
+          img{
+            display:block;
+            border:none;
+            outline:none;
+            }
+          a:hover{text-decoration: none;}
+          .free{
+            background:url(../img/free.png) no-repeat;
+            background-position:100% 0;
+          }
+          hr{
+            display: block;
+              height: 1px;
+              width: 97%;
+              background-color: #d8d8d8;
+              margin: 0 auto;
+          }
+          .autodesk{
+            z-index: 10000;
+            display: block;
+            position: fixed;
+            right: -10px;
+            bottom: 130px;
+            cursor: default;
+          }
+          .autodesk_dl{
+            width: 150px;
+            z-index: 10000;
+            display: block;
+            position: fixed;
+            left: 10px;
+            bottom: 50px;
+            cursor: default;
+          }
+          .auto_qx{
+            position: absolute;
+            top: 8px;
+            right: 0;
+          }
+          .auto_qx img{
+            width: 50%;
+          }
+          /*è¯•ç”¨ä»·æ ¼*/
+          .price {
+            margin-top: 40px;
+          }
+          .price p{
+            float: left;
+            line-height: 20px;
+            color: #24282C;
+          }
+          .price p:nth-child(2),.price p:nth-child(3){
+            color: #ff6600;
+            font-size: 16px;
+              margin-left: 10px;
+          }
+          .price a{
+            float: right;
+            border: 1px solid #00C1DE;
+            padding: 6px 20px;
+            margin-top: -10px;
+            color: #00C1DE;
+            font-size: 18px;
+          }
+          .price a:hover{
+            color: #FFFFFF;
+            background-color: #00C1DE;
+          }
+          /*BIM-Eè¯•ç”¨ä»·æ ¼*/
+          .bime_price {
+            margin-top: 20px;
+            /*padding-left: 20%;*/
+          }
+          .bime_price p:nth-child(4),.bime_price p:nth-child(1){
+            margin-left: 20px;
+            color: #000000;
+            font-size: 16px;
+          }
+          .bime_price p:nth-child(5),.bime_price p:nth-child(6){
+            color: #ff6600;
+            font-size: 16px;
+            margin-left: 10px;
+          }
+          .index_top p{
+            margin: 0 auto;
+            text-align: left;
+            color: #f5363f;
+            font-size: 14px;
+            padding: 5px 0 5px 20px;
+          }
+          .navbar{
+            border-bottom: 1px solid #4b5054;
+          } 
+          .navbar-brand{
+            z-index: 1000;
+
+          }
+          .navbar-brand img{
+            margin-right: 10px;
+            
+          }
+          .navbar-nav > li > a{
+            font-weight: normal;
+          }
+          /*banner*/
+          .banner{
+            width: 100%;
+            margin-top: 1px; 
+            background-color: #24272c;
+            border: 2px solid #24272C;
+            overflow: hidden;
+            position: relative;
+          }
+          #cont{
+              
+              position: relative;
+              width: 80%;
+              height: 430px;
+              margin: 0 auto;
+            }
+          .imm a{position: absolute; display: block;}
+          .imm a{width: 100%; height: 430px;}
+          .imm a img{width: 100%;display: block;}
+          .shiy{
+            width: 200px;
+            position: absolute;
+            right: 30px;
+            bottom: 20px;
+            color: white;
+          }
+          #sy {
+            display: inline;
+            background-color: #00A0E9;
+            padding: 8px 15px;
+            margin-left: 20px;
+            
+          }
+            .btm ul {
+              position: absolute;
+              z-index: 10000;
+              bottom: 40px;
+              right: 50%;
+            }
+            .btm ul li{
+              width: 20px;
+              height: 20px;
+              background-color: #cccccc;
+              border-radius: 50%;
+              list-style: none;
+              float: left;
+              margin: 0 5px;
+              text-align: center;
+              color: white;
+              line-height: 20px;
+              cursor: pointer;
+            }
+            .btm ul li.on{
+              background-color: aquamarine;
+            }
+            .diin{
+              width: 100%;
+              height: 30px;
+              background-color: black;
+              opacity: 0.5;
+              position: absolute;
+              bottom: 0;
+              color: white;
+              z-index: 10000;
+            }
+            #jiao{
+              display: none;
+            }
+             #left{
+               width: 35px;
+               height: 50px;
+               background-color: #555555;
+               opacity: 0.6;
+               z-index: 9999;
+               display: block;
+               position: absolute;
+               top: 30%;
+               left: 20px;
+               color: white;
+               font-size: 20px;
+               line-height: 50px;
+               text-align: center;
+               text-decoration: none;
+
+
+             }
+            #right{
+              width: 35px;
+              height: 50px;
+              background-color: #555555;
+              opacity: 0.6;
+              z-index: 9999;
+              display: block;
+              position: absolute;
+              top: 30%;
+              right: 20px;
+              color: white;
+              font-size: 20px;
+              line-height: 50px;
+              text-align: center;
+              text-decoration: none;
+            }
+          /*content*/
+          .in_content{
+            margin-top: 40px;
+            margin-bottom: 50px;
+            border-right: 1px solid #00a0e9;  
+          }
+          .in_more{
+            font-size: 12px;
+            text-decoration:underline;
+            color: #838383;
+            margin-top: 10px;
+          }
+          .in_content img{
+            float: left;
+            padding-right: 10px;
+            width: 100%;
+          }
+          .in_content h4{
+            font-size: 30px;
+            color: royalblue;
+            margin-top: 10px;
+            text-align: center;
+          }
+          .in_content_text li a{
+            font-size: 16px;
+            color: #a5a5a5;
+          }
+          .in_content_text li{
+            display: block;
+            overflow: hidden;
+            text-overflow:ellipsis;
+            white-space: nowrap;
+          }
+          /*product*/
+          .product_text{
+            text-align: center; 
+          }
+          .product_text h2{
+            color: #1E1E1E;
+          }
+          .product_text p{
+            color: #7A7A7A;
+            font-size: 16px;
+            margin-top: 15px;
+            margin-bottom: 30px;
+          }
+          .in_product>div:hover{
+            box-shadow: 0px 5px 5px 5px #CCC;
+            -webkit-box-shadow:0px 5px 5px 2px #CCC ;
+            border: 1px solid white;  
+          }
+          .in_product{
+            margin-top: 10px;
+            text-align: center; 
+            
+          }
+          .in_product>div{
+            background-image: url(../img/in_content_bg.png);
+            background-repeat: no-repeat;
+            background-position: top right;
+            border: 1px solid rgba(181, 165, 150, 0.73);
+            padding: 15px 0;
+          }
+
+          .in_product h4{
+            margin-top: 20px;
+          }
+          .in_product p{
+            padding: 20px 60px;
+            font-size: 14px;
+          }
+          /*çŸ¥è¯†è®ºå›*/
+          .share img{
+            width: 100%;
+          }
+          .share p{
+            color:#7A7A7A;
+            font-size: 14px;
+            padding: 20px 0;
+          }
+          .share > div{
+            background-color:#f2f2f5;
+            border: 1px solid #C0C0C0;
+          }
+          .share > div p{
+            text-align: center;
+          }
+          .share > div > div{
+            overflow: hidden;
+          }
+          .share img{  
+            transition: all 0.6s;
+            }
+          .share img:hover{ 
+            -webkit-transform:scale(1.1);
+            -moz-transform:scale(1.1);
+            transform:scale(1.1);
+            }
+            
+          /*footer*/
+          .footer{
+            padding-top: 20px;
+            padding-bottom: 30px;
+          }
+          .footer img{
+            margin-top: 5px;
+            margin-right: 5px;
+          }
+          .footer ul li{
+            float: left;
+            padding-right: 40px;
+            font-size: 16px;
+            
+          }
+          .footer ul li a{
+            color: #FFFFFF;
+          }
+          .footer ul li a:hover{
+            color: #00C1DE;
+          }
+                                                /*é€Ÿåšå¢žå€¼*/
+          .plan{
+            
+            background: url(../img/play_bg.jpg) no-repeat;
+            background-attachment:fixed ;
+            background-size: 100% 100%;
+          }
+          .plan h1{
+            margin-top: 25px;
+            color: white;
+            font-size: 50px;
+          }
+          .plan h2{
+            margin: 40px 0;
+            color: white;
+            font-size: 38px;
+          }
+          .plan p{
+            margin-bottom: 67px;
+            color: white;
+            font-size: 20px;
+            line-height: 34px;
+          }
+          /*plan_product*/
+          .giv_title{
+            margin: 15px auto;
+            color: #000000;
+          }
+          .plan_product{
+            border-top: solid 1px #00C1DE;
+            border-bottom: solid 1px #dcdcdc;
+            padding-bottom: 35px;
+          }
+          .plan_product h3{
+            margin: 20px 0;
+            color: #00C1DE;
+          } 
+          .plan_product p{
+            font-size: 16px;
+            color: #343434;
+            line-height: 1.8em;
+          } 
+          .plan_problem{
+            /*border: 1px solid #dcdcdc;*/
+            margin-bottom: 20px;
+          }
+          .plan_problem .row{
+            margin-top: 8px;
+          }
+          .plan_p{
+            border: 1px solid #959595;
+            font-size: 16px;
+            color: #232323;
+            background-color: #e4e3e3;
+            padding: 10px 0px 10px 20px;
+            cursor: pointer;
+            overflow: hidden;
+          }
+          .plan_p p{
+            float: left;
+          }
+          #plan_p{
+            margin-right: 5%;
+            margin-top: 20px;
+          } 
+          .plan_a{
+            font-size: 16px;
+            background-color: #FFFFFF;
+            padding-left:20px;
+            display: none;
+            line-height: 1.8em;
+            border: 1px solid #dcdcdc;
+            text-indent: 2em;
+          }                     
+                                      /*BIMGO*/
+          .title{
+            padding-top:10px;
+            margin-top: 15px;
+            
+            font-size: 38px;
+            color: #1E1E1E;
+            background: url(../img/free.png) no-repeat;
+            background-position: 30% 0;
+          }
+          .product_bimgo{
+            margin-top: 25px;
+            background-color: #F2F2F5;
+          }
+          .product_bimgo p{
+            margin: 20px 0;
+            font-size: 14px;
+            color: #7A7A7A;
+          }
+          .product_title h3{
+            color: #00C1DE;
+            margin-top: 20px;
+            
+          }
+
+          .product_title img{
+            margin-top: 24px;
+            margin-right: 10px;
+            margin-bottom: 11px;
+          }
+          .introduce{
+            margin-top: 10px;
+          }
+          .introduce p{
+            line-height: 24px;
+          }
+          .bimgo{
+            border: 1px dashed white;
+            width: 170px;
+            background-color: #00C1DE;
+            border-radius: 10px;
+            -moz-border-radius: 10px;
+            -webkit-border-radius: 10px;
+            margin-bottom: 20px;
+          }
+          .bimgo:hover{
+            background-color: #00a0e9;
+          }
+          .bimgo p a{
+            color: white;
+            font-size: 2rem;
+
+          }
+          .bimgo img{
+            margin-left: 10px;
+              margin-top: 24px;
+            margin-right: 10px;
+            margin-bottom: 11px;
+          }
+          /*äº§å“ä¸‹è½½*/
+          .down{
+            background-color: white;
+            text-align: center;
+            margin-top: 30px;
+            padding: 30px 0;
+            margin-bottom: 50px;
+          }
+          .down img{
+            margin-top: 20px;
+          }
+          .bimgo_btn{
+            background-color: #00c1de;
+            width: 155px;
+            margin: 0 auto;
+            border-radius: 10px;
+          }
+          .bimgo_btn:hover{
+            background-color: #00a0e9;
+          }
+          .bimgo_btn img{
+            margin-top:0;
+            padding: 10px;
+          }
+          .bimgo_btn h4{
+            font-size: 20px;
+            color: white;
+            padding-top: 10px;
+          }
+
+          /*bimé­”æœ¯å¸ˆ*/
+          .isbim{
+            margin-top: 20px;
+            width: 295px;
+          }
+          .isbim p{
+            margin-bottom: 0;
+          }
+          .isbim span a{
+            font-size: 20px;
+            color: white;
+            padding-left: 20px;
+          margin-bottom: 20px;
+          }
+          .isbim img{
+            margin-left: 20%;
+            margin-bottom: 0;
+          }
+          .isbim span{
+            display: block;
+            margin: 10px auto;
+            text-align: center;
+          }
+          /*bimæ—ç«‹æ–¹*/
+          .height{
+            height: 100px;
+          }
+          /*é’¢ç­‹ç®—é‡*/
+          .height_bcrebar{
+            min-height: 230px;
+            color: #0066b4;
+          }
+
+
+                            /*BIM_e*/
+          .bim_e{
+            margin-top: 30px;
+          }
+
+          .bim_e h3{
+            font-size: 28px;
+            color: #0066b4;
+            margin: 15px 0;
+          }
+          .bim_e>ul>li{
+            background: url(../img/BIM-E_03.png) no-repeat;
+            background-size: 2%;
+            background-position: 0 10px;
+            padding-left: 20px;
+            font-size: 16px;
+            line-height: 24px;
+          }
+                                  /*agree*/
+          .agree h3{
+            font-size:18px;
+            color: #000000;
+            margin-top: 30px;
+            margin-bottom: 20px;
+          }
+          .agree b{
+            color: #333333;
+          }
+          .agree p{
+            background-color: #FFFFFF;
+            padding: 30px 15px;
+            margin-bottom: 30px;
+            /*border: 1px solid #888888;*/
+          }
+          .agree span{
+            color: #df541d;
+          }
+                                                        /*download*/
+          .download{
+            margin-top: 30px;
+            box-shadow: 0px 2px 1px #CCC;
+            -webkit-box-shadow:0px 2px 1px #CCC ;
+          }
+          .download thead tr th:nth-child(1){
+            width: 45%;
+          }
+          .download thead tr th:nth-child(2){
+            width: 45%;
+          }
+          .download thead tr th:nth-child(3){
+            width: 10;
+          }
+          .download a{
+            color: #0066B4;
+          }
+                                      /*æ–°é—»ä¸­å¿ƒ*/
+
+          .new_plan{
+            
+            /*background: url(../img/new_banner.jpg) no-repeat;*/
+          /*  background-attachment:fixed ;*/
+
+          }
+          .new_plan h1{
+            margin-top: 25px;
+            color: white;
+            font-size: 50px;
+          }
+          .new_plan h2{
+            margin: 40px 0;
+            color: white;
+            font-size: 38px;
+          }
+          .new_plan p{
+            margin-bottom: 67px;
+            color: white;
+            font-size: 20px;
+            line-height: 34px;
+          }                         
+          .new_title{
+            color: #00C1DE;
+            margin: 15px auto;
+          }                           
+          .new_content{
+            padding-top: 30px;
+          }                           
+          .new_content .new_btn{
+            padding: 8px;
+            color: white;
+            background-color: #00C1DE;
+            border-radius: 4px;
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+          }                           
+          .new_content .row{
+            margin-bottom: 25px;
+          }
+          .new_tall_box{
+            width: 260px;
+            
+            background-color: white;
+            margin: 10% auto;
+            
+          }                         
+          .new_tall{
+            display: none;
+            z-index: 100;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #000000;
+            filter:alpha(opacity=80);  /*è®¾ç½®é€æ˜Žåº¦ä¸º60%*/
+            opacity:0.9;  /*éžIEæµè§ˆå™¨ä¸‹è®¾ç½®é€æ˜Žåº¦ä¸º60%*/
+          }                           
+          .new_hiden{
+            color: black;
+            float: right;
+            margin-right: 10px;
+            cursor: pointer;
+            transition:1s;
+            -webkit-transition:1s;
+          }                           
+          .new_hiden:hover{
+            -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+              transform: rotate(180deg);
+          }                           
+          
+          a {
+              cursor: pointer;
+          }                         
+
+
+    </style>
+</head>
+<body>
+	<div class="site hasScrollbars">
+     <!-- header start-->
+     <header class="site-header">
+      <div class="container">
+       <div class="row middle-xs">
+        <div class="col-xs-2">
+          <a aria-current="page" class="logo" href="index.html">
+            <img src="img/logo.png" class="top">
+         </a>
+        </div>
+        <div class="col-xs-10 ul-list">
+          <ul class="list-flex-inline Translation-language">
+            <li><a class="" href="javascript:void(0);">中文简体 |</a></li>
+            <li><a class="" href="TCN_contact.html">&nbsp;中文繁体  |</a></li>
+            <li><a class="" href="EN_contact.html">&nbsp;&nbsp;EN</a></li>
+          </ul>         
+           <ul class="list-flex-inline">
+            <li class="m-gnavi"><a class="reverse-cta" href="javascript:void(0);">关于我们</a>
+                <ul class="gnav_sub">
+                  <li>
+                    <a href="CN_about_company.html">关于公司</a>
+                  </li>
+                  <li>
+                    <a href="CN_about_leader.html">公司管理</a>
+                  </li>
+                </ul>
+            </li>
+            <li><a class="reverse-cta" href="CN_content.html">公司内容</a></li>
+            <li><a class="reverse-cta" href="CN_product.html">公司产品</a></li>
+            <li><a class="reverse-cta" href="CN_cooperation.html">合作案例</a></li>
+            <li><a class="reverse-cta" href="messages.html">精选资讯</a></li>
+            <li><a class="reverse-cta" href="CN_contact.html">联系方式</a></li>
+            <li><a class="reverse-cta" href="CN_join.html">欢迎加入</a></li>
+          </ul>
+        </div>
+       </div>
+      </div>
+     </header>
+     <!-- header end -->
+     <main>
+
+      <div class="masthead masthead-pub-services" style="background-image: linear-gradient(0deg,rgba(0,0,0,.8),hsla(0,0%,100%,0)),url(./img/banner.jpg)">
+       <div class="content">
+        <h1 class="page-title">精选资讯</h1>
+        <!-- <h1 class="masthead-header">contact</h1> -->
+       </div>
+       <!-- <div class="overlap-wrapper">
+        <a class="btn btn-primary" href="/contact">Distribute with us</a>
+       </div> -->
+      </div>
+      
+
+      <div class="contact container"> 
+        
+
+        <div class="new_tall" style="display: none;">
+          <div class="new_tall_box">
+            <div class="" style="border-bottom: 1px solid #777777; overflow: hidden;">
+              <p class="new_hiden">X</p>
+            </div>
+            <img class="img-responsive text-center" src="./img/qrcode.jpg" style="width:260px">
+          </div>
+        </div>
+
+        <div class="new_title">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12">
+                <h2>精选资讯汇总</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container-fluid plan_product">
+          <div class="container new_content" style="text-align: left;">
+            <div class="row">
+              <div class="col-md-6 col-sm-6">♦ &nbsp;<a class="new_tt">2020年知识付费行业各大平台观察报告</a></div>
+              <div class=" col-lg-offset-3 col-lg-3 col-md-offset-3 col-md-3 col-sm-offset-3 col-sm-3"><a class="new_btn">支付10元阅读</a></div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 col-sm-6">♦ &nbsp;<a class="new_tt">2020年知识付费行业收入报告</a></div>
+              <div class=" col-lg-offset-3 col-lg-3 col-md-offset-3 col-md-3 col-sm-offset-3 col-sm-3"><a class="new_btn">支付10元阅读</a></div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 col-sm-6">♦ &nbsp;<a class="new_tt">2020年知识付费行业报告</a></div>
+              <div class=" col-lg-offset-3 col-lg-3 col-md-offset-3 col-md-3 col-sm-offset-3 col-sm-3"><a class="new_btn">支付10元阅读</a></div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 col-sm-6">♦ &nbsp;<a class="new_tt">2020年知识付费行业研究报告</a></div>
+              <div class=" col-lg-offset-3 col-lg-3 col-md-offset-3 col-md-3 col-sm-offset-3 col-sm-3"><a class="new_btn">支付10元阅读</a></div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 col-sm-6">♦ &nbsp;<a class="new_tt">2020年知识付费企业数据分析及预测</a></div>
+              <div class=" col-lg-offset-3 col-lg-3 col-md-offset-3 col-md-3 col-sm-offset-3 col-sm-3"><a class="new_btn">支付10元阅读</a></div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 col-sm-6">♦ &nbsp;<a class="new_tt">2020年各大知识付费平台总结</a></div>
+              <div class=" col-lg-offset-3 col-lg-3 col-md-offset-3 col-md-3 col-sm-offset-3 col-sm-3"><a class="new_btn">支付10元阅读</a></div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 col-sm-6">♦ &nbsp;<a class="new_tt">2020年全国知识付费产业营收总结会议</a></div>
+              <div class=" col-lg-offset-3 col-lg-3 col-md-offset-3 col-md-3 col-sm-offset-3 col-sm-3"><a class="new_btn">支付10元阅读</a></div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 col-sm-6">♦ &nbsp;<a class="new_tt">2020年知识付费行业的发展之路（完整版）</a></div>
+              <div class=" col-lg-offset-3 col-lg-3 col-md-offset-3 col-md-3 col-sm-offset-3 col-sm-3"><a class="new_btn">支付10元阅读</a></div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 col-sm-6">♦ &nbsp;<a class="new_tt">2020年知识付费行业总结</a></div>
+              <div class=" col-lg-offset-3 col-lg-3 col-md-offset-3 col-md-3 col-sm-offset-3 col-sm-3"><a class="new_btn">支付10元阅读</a></div>
+            </div>
+           </div>
+          </div>
+          
+          <div class="clear blank"></div>
+
+          <script type="text/javascript" src="./js/jquery.min.js"></script>
+          <script type="text/javascript">
+              $(".new_btn").click(function(){
+                $(".new_tall").show();
+              });
+                $(".new_tt").click(function(){
+                $(".new_tall").show();
+              });
+              $(".new_hiden").click(function(){
+                $(".new_tall").hide();
+              });
+          </script>
+
+      </div>
+
+     </main>
+     <!-- footer start -->
+     <footer>
+      <div class="container">
+       <div class="row mb-5">
+        <div class="col-xs-12 col-md-2 mb-xs-3">
+         <a aria-current="page" class="logo" href="javascript:void(0);">
+            <img src="img/logo.png" class="bottom">
+          </a>
+        </div>
+        <div class="col-xs-12 col-md-3 col-md-offset-1 mb-xs-4 mb-md-0">
+         <a class="col-header" href="CN_about_company.html">关于LazyJoy</a>
+        </div>
+        <div class="col-xs-12 col-md-3">
+         <!-- <a class="col-header mb-4" href="">新闻中心</a> -->
+         <!-- <a class="col-header mb-4" href="">作为Lazyjoyer</a> -->
+         <a class="col-header mb-4" href="CN_join.html">加入Lazyjoyer</a>
+         <a class="col-header mb-4" href="CN_contact.html">联系我们</a>
+        </div>
+        <div class="col-xs-12 col-md-3">
+         <!-- <p class="mb-4">香港公司地址：香港九龍旺角彌敦道610號荷李活商業中心1318-19室</p> -->
+         <p class="mb-4">北京公司地址：北京市朝阳区东三环中路39号院 建外SOHO东区 5号楼2002室</p>
+         <p class="mb-4">联系电话：（010）59000608</p>
+         <ul class="list-inline">
+          <li><a href="https://www.facebook.com/Lazy-Joy-100518945075292" target="_blank" rel="noopener noreferrer">
+              <img src="./img/facebook.png" title="facebook">
+              </a></li>
+          <li><a href="https://www.instagram.com/lazyjoy2020/?hl=zh-cn" target="_blank" rel="noopener noreferrer">
+              <img src="./img/ins.png" title="instagram">
+              </a></li>
+          <li><a href="https://twitter.com/LazyJoy_offical" target="_blank" rel="noopener noreferrer">
+              <img src="./img/twitter.png" title="twitter">
+              </a></li>
+          <li><a href="https://www.youtube.com/channel/UCK53jrFZ_EeLyNlTBSojnUg/featured?view_as=subscriber" target="_blank" rel="noopener noreferrer">
+              <img src="./img/youtube.png" title="youtube">
+              </a></li>
+         </ul>
+        </div>
+       </div>
+      </div>
+      <div class="record">
+        <p>Copyright © 2020 书阅(北京)数字科技有限公司 All Rights Reserved. 
+          <a href="http://www.beian.miit.gov.cn/" target="_blank">京ICP备20012081号</a>
+          <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo">
+                <img class="" src="./img/gongan.png" style="vertical-align: top;">
+                京公网安备 11010502040683号
+            </a>
+        </p>
+      </div>
+     </footer>
+     <!-- footer end -->
+  
+  </div>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/common.js"></script>
+</body>
+</html>
